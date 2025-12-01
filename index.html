@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RANDOM GENERATOR - BOXY SITE</title>
+    <title>MY PORTFOLIO</title>
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
@@ -16,64 +16,79 @@
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="home.html">HOME</a></li>
+                <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="gallery.html">PROJECTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="index.html" class="active">FUN</a></li>
+                <li><a href="fun.html">FUN</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="main-content">
-        <section class="page-header">
-            <h1>RANDOM GENERATOR</h1>
-            <p>Just for fun - generate random vibes</p>
-        </section>
-
-        <section class="gameboy-container">
-            <div class="gameboy-body">
-                <div class="gameboy-screen-area">
-                    <div class="screen-label">PATTERN GENERATOR</div>
-                    <div class="gameboy-screen" id="vibeDisplay">
-                        <p class="vibe-text">▓ READY ▓</p>
-                    </div>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="pixel-character-wrapper">
+                    <div class="pixel-character"></div>
+                    <div class="character-tooltip">This is how I smile</div>
                 </div>
-                
-                <div class="gameboy-controls">
-                    <div class="dpad">
-                        <div class="dpad-center">
-                            <div class="dpad-up">▲</div>
-                            <div class="dpad-left">◀</div>
-                            <div class="dpad-right">▶</div>
-                            <div class="dpad-down">▼</div>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn-b">B</button>
-                        <button class="btn-a" id="generateBtn">A</button>
-                    </div>
-                </div>
-                
-                <div class="gameboy-bottom">
-                    <div class="start-select">
-                        <div class="select-btn">SELECT</div>
-                        <div class="start-btn">START</div>
-                    </div>
-                    <div class="stats">
-                        <p>SCORE: <span id="counter">0</span></p>
-                    </div>
+                <div class="hero-text">
+                    <h1>HI, I'M AYUSH BHATTARAI</h1>
+                    <p class="tagline">FULL STACK DEVELOPER • AI ENTHUSIAST • CREATIVE PROBLEM SOLVER</p>
+                    <button class="cta-btn" onclick="window.location.href='gallery.html'">VIEW MY WORK</button>
                 </div>
             </div>
         </section>
+
+        <div class="stripe-animation stripe-horizontal"></div>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="icon">◢</div>
+                <h3>FULL STACK DEVELOPMENT</h3>
+                <p>Building end-to-end web applications with modern technologies</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">▓</div>
+                <h3>AI & MACHINE LEARNING</h3>
+                <p>Integrating intelligent solutions into real-world applications</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">◣</div>
+                <h3>CREATIVE DESIGN</h3>
+                <p>Crafting unique experiences through art and analytical thinking</p>
+            </div>
+        </section>
+
+        <div class="stripe-animation stripe-vertical"></div>
+
+        <section class="content-box">
+            <h2>ABOUT ME</h2>
+            <p>I'm a full stack web developer with a passion for AI and creative problem-solving. I love exploring the intersection of technology, art, and design - analyzing challenges from unique angles to deliver innovative solutions.</p>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">FRESH</div>
+                    <div class="stat-label">GRADUATE</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">READY</div>
+                    <div class="stat-label">TO BUILD</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">IDEAS</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="stripe-animation stripe-diagonal"></div>
     </main>
 
     <footer class="footer">
         <p>© 2025 AYUSH BHATTARAI | BUILT WITH ◼</p>
     </footer>
     
-    <script src="generator.js"></script>
+    <script src="character.js"></script>
     <script src="mobile-nav.js"></script>
 </body>
 </html>
