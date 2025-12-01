@@ -982,6 +982,31 @@ body {
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .character-tooltip {
+        bottom: -60px;
+        font-size: 0.85rem;
+        padding: 0.7rem 1.2rem;
+    }
+    
+    .hero-text {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .character-tooltip {
+        bottom: -65px;
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .hero-text {
+        margin-top: 2rem;
+    }
+}
+
 /* RETRO GAMING STYLE OVERRIDES */
 
 /* Scanline effect */
