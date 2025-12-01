@@ -1,0 +1,1739 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #f5f5f5;
+    color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #fff;
+    border-bottom: 4px solid #000;
+    box-shadow: 0 4px 0px #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    border: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0px #000;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #fff;
+    border: 5px solid #000;
+    box-shadow: 8px 8px 0px #000;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 6px;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.cta-btn {
+    background: #fff;
+    color: #000;
+    border: 4px solid #000;
+    box-shadow: 6px 6px 0px #000;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.cta-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #000;
+}
+
+.cta-btn:active {
+    transform: translate(6px, 6px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+/* FEATURES */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    padding: 2rem;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    line-height: 1.6;
+}
+
+/* CONTENT BOX */
+.content-box {
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+
+.content-box p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* STATS GRID */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    background: #fff;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+/* PAGE HEADER */
+.page-header {
+    background: #fff;
+    border: 5px solid #000;
+    box-shadow: 8px 8px 0px #000;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    letter-spacing: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+/* BOXY LIST */
+.boxy-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.boxy-list li {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0px #000;
+    letter-spacing: 2px;
+}
+
+/* TEAM SECTION */
+.team-section {
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.team-card {
+    background: #fff;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    padding: 2rem;
+    text-align: center;
+}
+
+.avatar {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    height: 250px;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gallery-label {
+    background: #fff;
+    border: 3px solid #000;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.pattern-1 {
+    background: repeating-linear-gradient(45deg, #000 0px, #000 10px, #fff 10px, #fff 20px);
+}
+
+.pattern-2 {
+    background: repeating-linear-gradient(90deg, #000 0px, #000 20px, #fff 20px, #fff 40px),
+                repeating-linear-gradient(0deg, #000 0px, #000 20px, #fff 20px, #fff 40px);
+}
+
+.pattern-3 {
+    background: radial-gradient(circle, #000 20%, transparent 20%),
+                radial-gradient(circle, #000 20%, transparent 20%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    background-color: #fff;
+}
+
+.pattern-4 {
+    background: repeating-linear-gradient(0deg, #000 0px, #000 2px, #fff 2px, #fff 20px),
+                repeating-linear-gradient(90deg, #000 0px, #000 2px, #fff 2px, #fff 20px);
+}
+
+.pattern-5 {
+    background: repeating-linear-gradient(135deg, #000 0px, #000 15px, #fff 15px, #fff 30px);
+}
+
+.pattern-6 {
+    background: linear-gradient(45deg, #000 25%, #fff 25%, #fff 50%, #000 50%, #000 75%, #fff 75%);
+    background-size: 40px 40px;
+}
+
+/* CONTACT */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-form {
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #000;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.submit-btn {
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.1s;
+}
+
+.submit-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
+}
+
+.submit-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-box {
+    background: #fff;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    padding: 1.5rem;
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 4px solid #000;
+}
+
+.footer p {
+    letter-spacing: 2px;
+}
+
+/* STRIPE ANIMATIONS */
+.stripe-animation {
+    height: 80px;
+    margin: 3rem 0;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.stripe-horizontal {
+    background: repeating-linear-gradient(
+        90deg,
+        #000 0px,
+        #000 30px,
+        #fff 30px,
+        #fff 60px
+    );
+    background-size: 200% 100%;
+    animation: slideHorizontal 3s linear infinite;
+}
+
+.stripe-vertical {
+    background: repeating-linear-gradient(
+        0deg,
+        #000 0px,
+        #000 20px,
+        #fff 20px,
+        #fff 40px
+    );
+    background-size: 100% 200%;
+    animation: slideVertical 2s linear infinite;
+}
+
+.stripe-diagonal {
+    background: repeating-linear-gradient(
+        45deg,
+        #000 0px,
+        #000 20px,
+        #fff 20px,
+        #fff 40px
+    );
+    background-size: 200% 200%;
+    animation: slideDiagonal 4s linear infinite;
+}
+
+@keyframes slideHorizontal {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes slideVertical {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes slideDiagonal {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* RESPONSIVE */
+/* MOBILE MENU TOGGLE */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: 3px solid #000;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000;
+    transition: all 0.2s;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    transition: all 0.3s;
+}
+
+.menu-toggle:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+.menu-toggle.active .hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+    /* MOBILE NAVIGATION */
+    .nav-container {
+        position: relative;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border: 4px solid #000;
+        border-top: none;
+        box-shadow: 0 4px 0px #000;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        max-height: 400px;
+    }
+    
+    .nav-links li {
+        border-bottom: 2px solid #000;
+    }
+    
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 1rem;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: #000;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+    }
+    
+    /* MOBILE HERO LAYOUT */
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .pixel-character-wrapper {
+        order: 1;
+    }
+    
+    .hero-text {
+        order: 2;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+    }
+    
+    /* MOBILE GENERAL */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .tagline {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .cta-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .pixel-character {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+    
+    .page-header p {
+        font-size: 0.9rem;
+    }
+}
+
+/* GENERATOR PAGE */
+.generator-container {
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    padding: 3rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.generator-container .vibe-display {
+    background: #fff;
+    padding: 3rem 2rem;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    margin: 0 0 2rem 0;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.generator-container .vibe-text {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.generator-container .generate-btn {
+    background: #fff;
+    color: #000;
+    border: 4px solid #000;
+    box-shadow: 6px 6px 0px #000;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.generator-container .generate-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #000;
+}
+
+.generator-container .generate-btn:active {
+    transform: translate(6px, 6px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+.generator-container .stats {
+    background: #fff;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+.generator-container .stats #counter {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* PORTFOLIO HERO */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.pixel-character {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    position: relative;
+    animation: pixelBounce 2s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pixel-character::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    background-image: 
+        /* Left white highlight */
+        linear-gradient(#fff 0 0),
+        /* Right white highlight */
+        linear-gradient(#fff 0 0),
+        /* Left eye box */
+        linear-gradient(#000 0 0),
+        /* Right eye box */
+        linear-gradient(#000 0 0);
+    background-size:
+        5px 5px,
+        5px 5px,
+        18px 18px,
+        18px 18px;
+    background-position:
+        calc(31px + var(--eye-offset-x, 0px)) calc(50% - 3px + var(--eye-offset-y, 0px)),
+        calc(72px + var(--eye-offset-x, 0px)) calc(50% - 3px + var(--eye-offset-y, 0px)),
+        calc(20px + var(--eye-offset-x, 0px)) calc(50% + var(--eye-offset-y, 0px)),
+        calc(60px + var(--eye-offset-x, 0px)) calc(50% + var(--eye-offset-y, 0px));
+    background-repeat: no-repeat;
+    transition: background-position 0.1s ease-out;
+}
+
+.pixel-character::after {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 8px;
+    background: #000;
+    border-radius: 0;
+}
+
+@keyframes pixelBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-text {
+    text-align: left;
+    max-width: 500px;
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text .tagline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000;
+}
+
+.project-image {
+    height: 200px;
+    border-bottom: 4px solid #000;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+}
+
+.project-info p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .pixel-character {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .pixel-character::before {
+        top: 45px;
+        width: 75px;
+        height: 25px;
+        background-size:
+            4px 4px,
+            4px 4px,
+            14px 14px,
+            14px 14px;
+        background-position:
+            calc(24px + var(--eye-offset-x, 0px)) calc(50% - 2px + var(--eye-offset-y, 0px)),
+            calc(55px + var(--eye-offset-x, 0px)) calc(50% - 2px + var(--eye-offset-y, 0px)),
+            calc(15px + var(--eye-offset-x, 0px)) calc(50% + var(--eye-offset-y, 0px)),
+            calc(45px + var(--eye-offset-x, 0px)) calc(50% + var(--eye-offset-y, 0px));
+    }
+    
+    .pixel-character::after {
+        bottom: 45px;
+        width: 45px;
+        height: 6px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tooltip styling */
+.pixel-character-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.pixel-character {
+    cursor: pointer;
+}
+
+.character-tooltip {
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    white-space: nowrap;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.pixel-character-wrapper:hover .character-tooltip {
+    opacity: 1;
+}
+
+/* RETRO GAMING STYLE OVERRIDES */
+
+/* Scanline effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.05) 0px,
+        rgba(0, 0, 0, 0.05) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Retro gaming background */
+body {
+    background: #1a1a2e;
+    background-image: 
+        repeating-linear-gradient(90deg, transparent 0px, transparent 19px, rgba(255,255,255,0.03) 19px, rgba(255,255,255,0.03) 20px),
+        repeating-linear-gradient(0deg, transparent 0px, transparent 19px, rgba(255,255,255,0.03) 19px, rgba(255,255,255,0.03) 20px);
+}
+
+/* Pixel corners for boxes */
+.hero, .feature-card, .content-box, .page-header, .project-card, .team-section, .contact-form, .info-box, .generator-container {
+    position: relative;
+}
+
+.hero::before, .hero::after,
+.feature-card::before, .feature-card::after,
+.content-box::before, .content-box::after,
+.page-header::before, .page-header::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #000;
+}
+
+.hero::before, .feature-card::before, .content-box::before, .page-header::before {
+    top: -4px;
+    left: -4px;
+}
+
+.hero::after, .feature-card::after, .content-box::after, .page-header::after {
+    top: -4px;
+    right: -4px;
+}
+
+/* Retro button glow effect */
+.cta-btn, .generate-btn, .submit-btn, .nav-links a:hover {
+    position: relative;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.cta-btn:hover, .generate-btn:hover, .submit-btn:hover {
+    animation: buttonPulse 0.5s ease-in-out;
+}
+
+@keyframes buttonPulse {
+    0%, 100% { transform: translate(2px, 2px) scale(1); }
+    50% { transform: translate(2px, 2px) scale(1.05); }
+}
+
+/* Retro text effects */
+h1, h2, h3 {
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Pixel art decorations */
+.navbar::after {
+    content: '▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    font-size: 8px;
+    letter-spacing: 0;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Stats with retro counter style */
+.stat-number {
+    font-family: 'Courier New', monospace;
+    position: relative;
+}
+
+.stat-number::before {
+    content: '>';
+    position: absolute;
+    left: -15px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+/* Retro gaming icons */
+.icon {
+    animation: iconFloat 3s ease-in-out infinite;
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+/* Project cards with game cartridge style */
+.project-card {
+    background: linear-gradient(180deg, #fff 0%, #f5f5f5 100%);
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: 
+        linear-gradient(45deg, transparent 40%, #000 40%, #000 60%, transparent 60%),
+        linear-gradient(-45deg, transparent 40%, #000 40%, #000 60%, transparent 60%);
+    background-size: 100% 100%;
+}
+
+/* Retro footer with pixel border */
+.footer {
+    position: relative;
+    border-top: 4px solid #000;
+}
+
+.footer::before {
+    content: '▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    font-size: 8px;
+    letter-spacing: 0;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Retro form inputs */
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 2px 2px 0px #000, inset 0 0 0 2px #000;
+    outline: 2px solid #fff;
+    outline-offset: -4px;
+}
+
+/* Power-up style for feature cards */
+.feature-card:hover {
+    animation: powerUp 0.3s ease-out;
+}
+
+@keyframes powerUp {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1.02); }
+}
+
+/* Retro loading bar style for stats */
+.stat {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        #000 0px,
+        #000 4px,
+        transparent 4px,
+        transparent 8px
+    );
+}
+
+/* Retro game over style for contact info */
+.info-box {
+    background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
+}
+
+/* Pixel perfect borders */
+.stripe-animation {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* Retro cursor */
+* {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect x="0" y="0" width="16" height="16" fill="white" stroke="black" stroke-width="2"/></svg>'), auto;
+}
+
+button, a, .pixel-character {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect x="2" y="2" width="12" height="12" fill="black"/></svg>'), pointer;
+}
+
+/* CRT screen effect */
+@keyframes flicker {
+    0% { opacity: 0.98; }
+    50% { opacity: 1; }
+    100% { opacity: 0.98; }
+}
+
+.main-content {
+    animation: flicker 0.15s infinite;
+}
+
+/* Retro health bar style */
+.project-tags span {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: inset 0 0 0 1px #000;
+}
+
+.project-tags span:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* 8-bit style corners */
+.team-card::before,
+.team-card::after {
+    content: '◢';
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+}
+
+.team-card::before {
+    top: -5px;
+    left: -5px;
+}
+
+.team-card::after {
+    content: '◣';
+    bottom: -5px;
+    right: -5px;
+}
+
+/* CLEAN BLACK & WHITE RETRO THEME */
+
+/* Simple clean background */
+body {
+    background: #f5f5f5;
+    color: #000;
+}
+
+/* Navbar stays black and white */
+
+/* Hero and character stay black and white */
+
+/* Buttons stay black and white */
+
+/* Feature cards stay black and white */
+
+/* Content boxes stay black and white */
+
+/* Stats stay black and white */
+
+/* Stripes stay black and white */
+
+/* Page headers stay black and white */
+
+/* Projects stay black and white */
+
+/* Team section stays black and white */
+
+/* All other elements stay black and white */
+
+/* ANIMATED PATTERN KEYFRAMES FOR GENERATOR */
+
+@keyframes slidePattern {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes slideHorizontal {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes slideVertical {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes slideDiagonal {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes pulsePattern {
+    0%, 100% {
+        background-size: 100% 100%;
+    }
+    50% {
+        background-size: 120% 120%;
+    }
+}
+
+@keyframes rotatePattern {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes spinPattern {
+    0% {
+        background-position: center;
+        transform: rotate(0deg);
+    }
+    100% {
+        background-position: center;
+        transform: rotate(360deg);
+    }
+}
+
+/* GAME BOY STYLE FOR FUN PAGE */
+
+.gameboy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.gameboy-body {
+    background: #fff;
+    border: 8px solid #000;
+    border-radius: 12px 12px 40px 12px;
+    box-shadow: 8px 8px 0px #000;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+.gameboy-screen-area {
+    background: #e0e0e0;
+    border: 6px solid #000;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.screen-label {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    color: #666;
+    text-align: center;
+}
+
+.gameboy-screen {
+    background: #fff;
+    border: 4px solid #000;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gameboy-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.dpad {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.dpad-center {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: polygon(
+        40% 0%, 60% 0%, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0% 60%, 0% 40%, 40% 40%
+    );
+}
+
+.dpad-up, .dpad-down, .dpad-left, .dpad-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dpad-up {
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dpad-down {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dpad-left {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dpad-right {
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    transform: rotate(-20deg);
+}
+
+.btn-a, .btn-b {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    background: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000;
+    transition: all 0.1s;
+    font-family: 'Courier New', monospace;
+}
+
+.btn-a:hover, .btn-b:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-a:active, .btn-b:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+.gameboy-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 3px solid #000;
+    margin-top: 1rem;
+}
+
+.start-select {
+    display: flex;
+    gap: 1rem;
+}
+
+.select-btn, .start-btn {
+    background: #000;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border: 3px solid #000;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px #666;
+}
+
+.select-btn:active, .start-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #666;
+}
+
+.gameboy-bottom .stats {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.gameboy-bottom .stats #counter {
+    font-size: 1.1rem;
+}
+
+/* Remove old generator styles for fun page */
+.generator-container {
+    display: none;
+}
+
+/* TABLET - Game Boy Color Style */
+@media (max-width: 768px) {
+    .gameboy-container {
+        padding: 1rem;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+        border-radius: 20px;
+    }
+    
+    .gameboy-body {
+        padding: 1.5rem;
+        border-width: 6px;
+        max-width: 100%;
+        background: linear-gradient(180deg, #fff 0%, #f9f9f9 100%);
+        box-shadow: 8px 8px 0px #000, inset 0 0 30px rgba(0, 0, 0, 0.05);
+    }
+    
+    .gameboy-screen-area {
+        padding: 1rem;
+        border-width: 4px;
+        background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
+        border-radius: 8px;
+        position: relative;
+    }
+    
+    .gameboy-screen-area::before {
+        content: '◉ POWER';
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.6rem;
+        color: #666;
+        letter-spacing: 1px;
+    }
+    
+    .gameboy-screen {
+        padding: 2.5rem 1rem;
+        min-height: 180px;
+        border-width: 3px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .vibe-text {
+        font-size: 1.1rem !important;
+    }
+    
+    .gameboy-controls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+    
+    .dpad {
+        width: 90px;
+        height: 90px;
+        justify-self: end;
+        margin-right: 1rem;
+    }
+    
+    .action-buttons {
+        transform: rotate(0deg);
+        justify-self: start;
+        margin-left: 1rem;
+        gap: 1rem;
+    }
+    
+    .btn-a, .btn-b {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+        border-width: 3px;
+        box-shadow: 4px 4px 0px #000;
+    }
+    
+    .gameboy-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        background: linear-gradient(180deg, #f5f5f5 0%, #e8e8e8 100%);
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+    
+    .start-select {
+        gap: 1rem;
+    }
+    
+    .select-btn, .start-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.7rem;
+        box-shadow: 3px 3px 0px #666;
+    }
+}
+
+/* MOBILE - Game Boy Pocket Style */
+@media (max-width: 480px) {
+    .gameboy-container {
+        padding: 0.5rem;
+        background: #f0f0f0;
+    }
+    
+    .gameboy-body {
+        padding: 1rem;
+        border-radius: 12px 12px 40px 12px;
+        border-width: 5px;
+        background: #fff;
+    }
+    
+    .gameboy-screen-area {
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .gameboy-screen {
+        padding: 2rem 0.8rem;
+        min-height: 140px;
+    }
+    
+    .vibe-text {
+        font-size: 0.95rem !important;
+        padding: 8px 12px !important;
+        letter-spacing: 1px;
+    }
+    
+    .gameboy-controls {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0;
+    }
+    
+    .dpad {
+        width: 80px;
+        height: 80px;
+        justify-self: center;
+        margin: 0;
+    }
+    
+    .action-buttons {
+        justify-self: center;
+        margin: 0;
+        flex-direction: row-reverse;
+    }
+    
+    .btn-a, .btn-b {
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+    
+    .gameboy-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    .start-select {
+        order: 2;
+    }
+    
+    .gameboy-bottom .stats {
+        order: 1;
+        font-size: 0.9rem;
+    }
+    
+    .screen-label {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* LANDSCAPE MODE - Horizontal Game Boy */
+@media (max-width: 768px) and (orientation: landscape) {
+    .gameboy-body {
+        max-width: 90vw;
+        padding: 1rem 2rem;
+    }
+    
+    .gameboy-screen-area {
+        margin-bottom: 1rem;
+    }
+    
+    .gameboy-screen {
+        min-height: 120px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .gameboy-controls {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 2rem;
+        padding: 0.5rem 0;
+    }
+    
+    .dpad {
+        grid-column: 1;
+    }
+    
+    .action-buttons {
+        grid-column: 3;
+    }
+    
+    .gameboy-bottom {
+        padding: 0.8rem;
+    }
+}

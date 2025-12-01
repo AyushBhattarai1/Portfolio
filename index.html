@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM GENERATOR - BOXY SITE</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">◼ AYUSH ◼</h2>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="index.html" class="active">FUN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-header">
+            <h1>RANDOM GENERATOR</h1>
+            <p>Just for fun - generate random vibes</p>
+        </section>
+
+        <section class="gameboy-container">
+            <div class="gameboy-body">
+                <div class="gameboy-screen-area">
+                    <div class="screen-label">PATTERN GENERATOR</div>
+                    <div class="gameboy-screen" id="vibeDisplay">
+                        <p class="vibe-text">▓ READY ▓</p>
+                    </div>
+                </div>
+                
+                <div class="gameboy-controls">
+                    <div class="dpad">
+                        <div class="dpad-center">
+                            <div class="dpad-up">▲</div>
+                            <div class="dpad-left">◀</div>
+                            <div class="dpad-right">▶</div>
+                            <div class="dpad-down">▼</div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn-b">B</button>
+                        <button class="btn-a" id="generateBtn">A</button>
+                    </div>
+                </div>
+                
+                <div class="gameboy-bottom">
+                    <div class="start-select">
+                        <div class="select-btn">SELECT</div>
+                        <div class="start-btn">START</div>
+                    </div>
+                    <div class="stats">
+                        <p>SCORE: <span id="counter">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 AYUSH BHATTARAI | BUILT WITH ◼</p>
+    </footer>
+    
+    <script src="generator.js"></script>
+    <script src="mobile-nav.js"></script>
+</body>
+</html>
